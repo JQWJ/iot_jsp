@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<link rel="stylesheet" href="css/css.css"></link>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +21,12 @@ String section = request.getParameter("section") != null ? request.getParameter(
 			break;
 		case "select":
 			%> <%@include file="page/select.jsp" %> <%
+			break;
+		case "select_sales":
+			%> <%@include file="page/select_sales.jsp" %> <%
+			break;
+		case "select_sale_by_shop":
+			%> <%@include file="page/select_sale_by_shop.jsp" %> <%
 			break;
 		default:
 			%> <%@include file="static/index.jsp" %> <%
