@@ -1,4 +1,3 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <h3>insert</h3>
@@ -9,19 +8,15 @@ function reset_form() {
 }
 </script>
 
-<form action="action/insert_data.jsp" method="post" name="input_form">
+<form action="action/insert_shopdata.jsp" method="post" name="input_form">
 	<table border="1">
 	<tr>
-		<td>피자 코드</td>
-		<td><input type="text" name="pizza_code" /></td>
+		<td>매점 코드</td>
+		<td><input type="text" name="shop_code" /></td>
 	</tr>
 	<tr>
-		<td>피자 이름</td> 
-		<td><input type="text" name="pizza_name" /></td>
-	</tr>
-	<tr>
-		<td>피자 가격</td> 
-		<td><input type="number" name="cost" /></td>
+		<td>매점 이름</td> 
+		<td><input type="text" name="shop_name" /></td>
 	</tr>
 	<tr>
 		<td colspan="2">
