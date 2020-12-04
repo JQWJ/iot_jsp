@@ -89,3 +89,23 @@ ORDER BY
     TOTAL_COST DESC;
 
 INSERT INTO TBL_PIZZA_01(PCODE, PNAME, COST) VALUES('토네이도피자', 'PCODE001', 120000);
+
+CREATE TABLE product (
+    product_id number(10) NOT NULL,
+    name varchar2(40),
+    price number(10),
+    category_id number(10) NOT NULL
+);
+
+CREATE TABLE category (
+    category_id number(10) NOT NULL,
+    name varchar2(20)
+);
+
+CREATE TABLE sale (
+    sale_id number(10) NOT NULL,
+    product_id number(10) NOT NULL,
+    purchase_date date,
+    sale_price number(10) NOT NULL,
+    amount number(5) NOT NULL
+);
